@@ -13,7 +13,7 @@ int[,,] Create3DArrayRndInt(int x, int y, int z, int min, int max)
     int[,,] array = new int[x, y, z];
 
     Random rnd = new Random((int)DateTime.Now.Millisecond);
-    
+
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -43,6 +43,6 @@ void Print3DArray(int[,,] array)
     }
 }
 
-int[,,] array3d = Create3DArrayRndInt(2, 2, 2, 10, 99);
-Print3DArray(array3d);
+int[,,] array3D = Create3DArrayRndInt(2, 2, 2, 10, 99);
+Print3DArray(array3D);
 Console.WriteLine();
