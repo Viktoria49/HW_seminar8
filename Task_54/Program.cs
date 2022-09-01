@@ -57,7 +57,7 @@ void MatrixRowsSort(int[,] matrix)
     }
 }
 
-int[,] array2D = CreateMatrixRndInt(5, 4, 0, 9);
+int[,] array2D = CreateMatrixRndInt(5, 3, 0, 9);
 PrintMatrix(array2D);
 Console.WriteLine();
 MatrixRowsSort(array2D);
