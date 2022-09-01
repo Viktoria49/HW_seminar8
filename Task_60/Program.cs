@@ -8,10 +8,12 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] Create3DArrayRndInt(int z, int x, int y, int min, int max)
+int[,,] Create3DArrayRndInt(int x, int y, int z, int min, int max)
 {
-    int[,,] array = new int[z, x, y];
+    int[,,] array = new int[x, y, z];
+
     Random rnd = new Random((int)DateTime.Now.Millisecond);
+    
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
